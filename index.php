@@ -1,5 +1,6 @@
 <?php
 include_once ("cabecerausuario.php");
+include_once("./db_configuration.php");
 
  if(!isset($_SESSION)) 
     { 
