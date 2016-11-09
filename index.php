@@ -4,6 +4,7 @@ include_once ("cabecerausuario.php");
  if(!isset($_SESSION)) 
     { 
         session_start(); 
+		include_once("tema.php");
     } 
 
 
