@@ -1,0 +1,12 @@
+.form-group{
+background-color:blue;
+color: #003;
+}
+label {
+	margin-bottom: 8px;
+	display: block;
+	width: 300px;
+	color: #003;
+	font-size: 14px;
+	font-weight: bold;
+}
