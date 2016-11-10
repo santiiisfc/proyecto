@@ -1,7 +1,6 @@
 <?php
-include_once("./db_configuration.php");
 require('./pdf/fpdf.php');
-
+include_once("./db_configuration.php");
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('times', '', 10);
@@ -28,6 +27,7 @@ $pdf->Ln(8);
 $pdf->SetFont('Arial', '', 8);
 
 //CONSULTA
+
 $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
 $consulta = "SELECT * FROM `pedidos` JOIN detallespedido on pedidos.idpedido=detallespedido.idpedido ";
 $result = $connection->query($consulta);
