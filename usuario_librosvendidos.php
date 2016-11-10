@@ -39,7 +39,7 @@ unset($connection);
           width: 590,
           legend: { position: 'none' },
           chart: { title: 'Libros más vendidos ',
-                   subtitle: 'Libros más encargados' },
+                   subtitle: 'Libros más vendidos en la web' },
           bars: 'vertical', // Required for Material Bar Charts.
           axes: {
             x: {
