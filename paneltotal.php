@@ -28,9 +28,10 @@ if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'ADMIN
 			  <a class="btn btn-primary" href="panelusuarios.php">Administrar usuarios</a></td>
 			  <a class="btn btn-primary" href="paneleditorial.php">Administrar editoriales</a></td>
 			  <a class="btn btn-primary" href="panelautores.php">Administrar autores</a></td>
-		
 			   <a class="btn btn-primary" href="panellibro.php">Administrar libro</a></td>
 			   <a class="btn btn-primary" href="pedidosadmin.php">Administrar Pedidos</a></td>
+			     <a class="btn btn-primary" href="graficas.php">Graficas</a></td>
+				    <a class="btn btn-primary" href="menupdf.php">Informe PDF</a></td>
 			</div>
 		</div>
 		<div class="col-xs-2">
