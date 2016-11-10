@@ -35,7 +35,7 @@ unset($connection);
            ?>
         ]);
         var options = {
-          title: 'Libros mas vendidos',
+          title: 'Libros más vendidos',
           width: 590,
           legend: { position: 'none' },
           chart: { title: 'Libros más vendidos ',
