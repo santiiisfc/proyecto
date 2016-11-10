@@ -1,15 +1,10 @@
 <?php
 
-session_start();
 include_once ("cabecerausu2.php");
+session_start();
+
+if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'NORMAL'){
 include_once("tema_index.php");
-
-
-
-	
-
-
-
 ?>
 
 
@@ -30,7 +25,11 @@ include_once("tema_index.php");
 	</div>
 	</body>
 	</html>
-
+	<?php
+}else{
+	header('location:index.php');
+}
+	?>
 
 	
 

@@ -1,5 +1,7 @@
 
 
+
+
 <html><meta charset="UTF-8">
 	
 	
@@ -51,6 +53,7 @@
 				    <li><a href="usuario_librosvendidos.php">Más vendidos</a></li>
 				  <li><a href="catalogousuario.php"> Catálogo de libros </a></li>
 				  <li><a href="pedidos.php"> Mis pedidos</a></li>
+				  	  <li><a href="pdf_usuario.php"> Mi actividad en PDF</a></li>
 				  <li><a href="cerrar.php"> Cerrar Sesion</a></li>
 				  <li>
                     <?php 
