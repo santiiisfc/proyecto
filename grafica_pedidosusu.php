@@ -1,7 +1,7 @@
 <?php
-
+include_once("./db_configuration.php");
   $contenido = "";
-  $connection = new mysqli("localhost", "root", "", "libreria");
+ $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
   if ($connection->connect_errno) {
       printf("Connection failed: %s\n", $mysqli->connect_error);
       exit();
