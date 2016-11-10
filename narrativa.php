@@ -5,6 +5,7 @@ include_once("./db_configuration.php");
  if(!isset($_SESSION)) 
     { 
         session_start(); 
+		include_once("tema.php");
     } 
 
 
