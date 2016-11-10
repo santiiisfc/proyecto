@@ -21,6 +21,7 @@ unset($obj);
 unset($connection);
 } //END OF THE IF CHECKING IF THE QUERY WAS RIGHT
 ?>
+<a href="paneltotal.php" target="_self"> <input type="button" name="boton" value="Volver atras" /> </a>
 <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
