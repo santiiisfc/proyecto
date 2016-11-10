@@ -24,7 +24,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'ADMIN
 		</div>
 		<div class="col-xs-10">
 			 <div class="btn-group btn-group-justified">
-			  <a class="btn btn-primary" href="menupdf.php">Todos los pedidos en PDF</a></td>
+			  <a class="btn btn-primary" href="pdf.php">Todos los pedidos en PDF</a></td>
 			 
 			 
 			</div>
