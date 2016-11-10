@@ -1,7 +1,6 @@
 <?php
 include_once ("cabecerausuario.php");
-include_once("./db_configuration.php");
-include_once("tema.php");
+
  if(!isset($_SESSION)) 
     { 
         session_start(); 
