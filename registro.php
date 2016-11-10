@@ -1,22 +1,23 @@
-<!doctype html>
+
+
 <?php
 include_once ("cabecerausuario.php");
 include_once("./db_configuration.php");
-
-
-
  if(!isset($_SESSION)) 
     { 
         session_start(); 
     } 
-
 include_once("tema.php");
+
 ?>
   
 <html>
 <head>
+ <style>
+			
+	   </style>
 		
-		<link href="estilos_r.css" rel="stylesheet" type="text/css">
+
 <meta charset="utf-8">
 
 
@@ -24,7 +25,8 @@ include_once("tema.php");
 
 <body>
 <?php if (!isset($_POST["submit"])) : ?> 
- <div class="row">
+
+<div class="row" >
 		<div class="col-xs-4">
 		</div>
 		<div class=" col-xs-4">
@@ -60,6 +62,9 @@ include_once("tema.php");
 	</div>
 </body>
 </html>
+
+
+
 
 <?php else: ?>
 <?php
