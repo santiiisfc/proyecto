@@ -1,12 +1,16 @@
 <?php
 include_once ("cabecerausuario.php");
-  $contenido = "";
-include_once("./db_configuration.php");
-  if ($connection->connect_errno) {
-      printf("Connection failed: %s\n", $mysqli->connect_error);
-      exit();
-  }
-  $contenido = "";
+
+ if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+		include_once("tema.php");
+    } 
+
+
+?>
+<?php 
+
      $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
   if ($result = $connection->query("SELECT COUNT(*) AS pedidos, libro.titulo AS libro FROM detallespedido join libro on detallespedido.codigol=libro.codigol GROUP BY detallespedido.codigol ORDER BY libro.codigol DESC LIMIT 3 ;")) {
   while($obj = $result->fetch_object()) {
