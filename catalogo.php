@@ -1,9 +1,8 @@
 <?php
 
 include_once ("cabecerausuario.php");
-
 session_start();
-
+include_once("tema.php");
 
 	
 
