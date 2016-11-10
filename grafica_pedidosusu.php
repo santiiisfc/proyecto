@@ -1,4 +1,5 @@
 <?php
+include_once ("cabeadmin.php");
 include_once("./db_configuration.php");
   $contenido = "";
  $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
