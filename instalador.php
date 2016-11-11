@@ -64,7 +64,7 @@
               $password=$_POST["pass"];
               $bd=$_POST["formbd"];
               $host=$_POST["formhost"];
-              $connection = new mysqli("localhost","root","","libreria");
+              	$connection = new mysqli($db_host, $db_user, $db_password, $db_name);
               if ($connection->connect_errno) {
                    printf("Connection failed: %s\n", $connection->connect_error);
                    exit();
