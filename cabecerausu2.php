@@ -46,7 +46,7 @@
 			<nav class="navbar">
 			  <div class="container-fluid">
 				<div class="navbar-header">
-				  <a class="navbar-brand" href="#">Libreria Santiago</a>
+				  <a class="navbar-brand" href="indexusuario.php">Libreria Santiago</a>
 				</div>
 				<ul class="nav navbar-nav">
 				
