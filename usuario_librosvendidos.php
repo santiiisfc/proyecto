@@ -1,6 +1,7 @@
 <?php
 include_once ("cabecerausu2.php");
 include_once("./db_configuration.php");
+include_once("tema_index.php");
   $contenido = "";
  $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
   if ($connection->connect_errno) {
