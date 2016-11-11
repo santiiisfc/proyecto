@@ -3,6 +3,7 @@
 session_start();
 include_once ("cabecerausu2.php");
 include_once("tema_index.php");
+include_once("./db_configuration.php");
 
 
 
