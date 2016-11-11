@@ -1,9 +1,12 @@
 <?php
 include_once ("cabecerausu2.php");
-include_once("tema_index.php");
- session_start();
 
-if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'NORMAL'){
+session_start();
+
+if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'NORMAL')
+{
+include_once("tema_index.php");
+
 
 ?>
 
