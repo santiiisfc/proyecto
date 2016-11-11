@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -57,6 +58,12 @@
           </div>
 
         </form>
+  <?php
+
+include_once("./db_configuration.php");
+
+?>
+
         <?php
           if(isset($_POST["usu"])){
               $contenido=$_POST["contenido"];
