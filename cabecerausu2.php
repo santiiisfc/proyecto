@@ -49,7 +49,7 @@
 				  <a class="navbar-brand" href="#">Libreria Santiago</a>
 				</div>
 				<ul class="nav navbar-nav">
-				  <li class="active"><a href="ofertasusuario.php"> Ofertas </a></li>
+				
 				    <li><a href="usuario_librosvendidos.php">Más vendidos</a></li>
 				  <li><a href="catalogousuario.php"> Catálogo de libros </a></li>
 				  <li><a href="pedidos.php"> Mis pedidos</a></li>
