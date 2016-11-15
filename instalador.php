@@ -58,6 +58,7 @@
 
         </form>
         <?php
+  include_once("./db_configuration.php");
           if(isset($_POST["usu"])){
               $contenido=$_POST["contenido"];
               $usuario=$_POST["usu"];
