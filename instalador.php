@@ -12,7 +12,7 @@
   <body style="background-color:#58D3F7">
     <div style="width:1000px;margin: 0 auto;margin-top:41px;">
       <div>
-          <h1 style="margin-left:25px;margin-bottom:25px;color:white";>Libreria: Instalador Web</h1>
+          <h1 style="margin-left:25px;margin-bottom:25px;color:white";>Libreria:Instalador Web</h1>
     <div class='form-group col-lg-5'>
             <form action="" method="post">
 
