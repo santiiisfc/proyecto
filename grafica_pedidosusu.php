@@ -37,7 +37,7 @@ unset($connection);
         ]);
         var options = {
           title: 'Pedidos por Clientes',
-          width: 590,
+          width: 591,
           legend: { position: 'none' },
           chart: { title: 'Pedidos por cliente',
                    subtitle: 'Cantidad de pedidos por cada uno de los clientes' },
