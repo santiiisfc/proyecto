@@ -1,4 +1,5 @@
 <?php
+  include_once('db_var.php');
   //Checking if we are into the OpenShift App
   if (isset($_ENV['OPENSHIFT_APP_NAME'])) {
     $db_user=$_ENV['OPENSHIFT_MYSQL_DB_USERNAME']; //Openshift db name OPENSHIFT_MYSQL_DB_USERNAME
