@@ -73,10 +73,10 @@
                 include("./database.php");
                 $file = fopen("./db_var.php", "a");
                 fwrite($file, "<?php"."\n");
-                fwrite($file, "$"."database="."'".$db_name."';"."\n");
-                fwrite($file, "$"."user="."'".$db_user."';"."\n");
-                fwrite($file, "$"."password="."'".$db_password."';"."\n");
-                fwrite($file, "$"."host="."'".$db_host."';"."\n");
+                fwrite($file, "$"."db_name="."'".$db_name."';"."\n");
+                fwrite($file, "$"."db_user="."'".$db_user."';"."\n");
+                fwrite($file, "$"."db_password="."'".$db_password."';"."\n");
+                fwrite($file, "$"."db_host="."'".$db_host."';"."\n");
                 fwrite($file, "?>"."\n");
                 fclose($file);
                 unlink('instalacion.php');
