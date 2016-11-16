@@ -18,7 +18,7 @@ $pdf->Cell(47, 10, 'Fecha: '.date('d-m-Y').'', 0);
 $pdf->Ln(17);
 $pdf->SetFont('Arial', 'B', 14);
 $pdf->Cell(70, 8, '', 0);
-$pdf->Cell(80, 8, 'TODOS LOS PEDIDOS REGISTRADOS', 0);
+$pdf->Cell(80, 8, 'MIS PEDIDOS', 0);
 $pdf->Ln(13);
 $pdf->SetFont('Arial', 'B', 8);
 $pdf->Cell(25, 8, 'idpedido', 1,0,"C");
