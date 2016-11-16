@@ -71,7 +71,7 @@
                    exit();
               }else{
                 include("./database.php");
-                $file = fopen("../db_var.php", "a");
+                $file = fopen("./db_var.php", "a");
                 fwrite($file, "<?php"."\n");
                 fwrite($file, "$"."database="."'".$db_name."';"."\n");
                 fwrite($file, "$"."user="."'".$db_user."';"."\n");
