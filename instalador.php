@@ -79,10 +79,9 @@
                 fwrite($file, "$"."host="."'".$db_host."';"."\n");
                 fwrite($file, "?>"."\n");
                 fclose($file);
-                unlink("../instalador/database.php");
-                unlink("../instalador/instalador.php");
-                rmdir('../instalador');
-                 header("Location: ./../login.php");
+                unlink('instalacion.php');
+                 unlink('database.php');
+                 header('Location:./index.php/');
                }
               }
         ?>
