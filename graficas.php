@@ -24,7 +24,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['ns']) && $_SESSION['ns'] == 'ADMIN
 		</div>
 		<div class="col-xs-10">
 			 <div class="btn-group btn-group-justified">
-			  <a class="btn btn-primary" href="grafica_pedidosusu.php">Usuarios con más pedidos</a></td>
+			  <a class="btn btn-primary" href="grafica_pedidosusu.php">Nº de pedidos por cada usuario</a></td>
 			  <a class="btn btn-primary" href="admin_librosvendidos.php">Libros más vendidos</a></td>
 			 
 			</div>
