@@ -20,18 +20,18 @@
     				</div>
     				<div class="form-group col-lg-5">
     					<div class="form-group">
-                    <input type="password" name="pass" class="form-control input-lg" placeholder="Contraseña">
+                    <input type="password" name="dbpass" class="form-control input-lg" placeholder="Contraseña">
     					</div>
     				</div>
             <div class="form-group col-lg-5">
     					<div class="form-group">
-                  <input type="text" name="dbase" class="form-control input-lg" placeholder="Host de la BD" required>
+                  <input type="text" name="dbhost" class="form-control input-lg" placeholder="Host de la BD" required>
                 </div>
     				</div>
 
             <div class="form-group col-lg-5">
               <div class="form-group">
-                  <input type="text" name="formbd" class="form-control input-lg" placeholder="Nombre de la BD" required>
+                  <input type="text" name="dbase" class="form-control input-lg" placeholder="Nombre de la BD" required>
                 </div>
             </div>
             <div class="form-group col-lg-5">
@@ -60,10 +60,10 @@
         
               <?php
           if(isset($_POST["dbuser"])){
-              $db_name=$_POST["dbase"];
               $db_user=$_POST["dbuser"];
-              $db_password=$_POST["dbpass"];
-              $db_host=$_POST["host"];
+               $db_password=$_POST["dbpass"];
+              $db_name=$_POST["dbase"];
+              $db_host=$_POST["dbhost"];
               $connection = new mysqli($db_host,$db_user,$db_password,$db_name);
                  //TESTING IF THE CONNECTION WAS RIGHT
               if ($connection->connect_errno) {
