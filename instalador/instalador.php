@@ -59,100 +59,42 @@
         </form>
         <?php
           if(isset($_POST["usu"])){
+
+              $db_name=$_POST["formbd"];
+              $db_user=$_POST["usu"];
+              $db_password=$_POST["pass"];
+              $db_host=$_POST["formhost"];
+              $connection = new mysqli($db_host,$db_user,$db_password,$db_name);
+                 //TESTING IF THE CONNECTION WAS RIGHT
+
               $contenido=$_POST["contenido"];
               $usuario=$_POST["usu"];
               $password=$_POST["pass"];
               $bd=$_POST["formbd"];
               $host=$_POST["formhost"];
              $connection = new mysqli($host, $usuario, $password, $bd);
+
               if ($connection->connect_errno) {
                    printf("Connection failed: %s\n", $connection->connect_error);
                    exit();
               }else{
-                if($contenido == 'completa'){
-                  // Name of the file
-                  $filename = 'libreria.sql';
-                  // MySQL host
-                  $mysql_host = $host;
-                  // MySQL username
-                  $mysql_username = $usuario;
-                  // MySQL password
-                  $mysql_password = $password;
-                  // Database name
-                  $mysql_database = $bd;
-                  // Connect to MySQL server
-                  // Temporary variable, used to store current query
-                  $templine = '';
-                  // Read in entire file
-                  $lines = file($filename);
-                  // Loop through each line
-                  foreach ($lines as $line)
-                  {
-                  // Skip it if it's a comment
-                  if (substr($line, 0, 2) == '--' || $line == '')
-                      continue;
-                  // Add this line to the current segment
-                  $templine .= $line;
-                  // If it has a semicolon at the end, it's the end of the query
-                  if (substr(trim($line), -1, 1) == ';')
-                  {
-                      // Perform the query
-                      $connection->query($templine) or print('Error performing query \'<strong>' . $templine . '\': ' . mysql_error() . '<br /><br />');
-                      // Reset temp variable to empty
-                      $templine = '';
-                  }
-                  }
-                   echo "Tables imported successfully";
-                }else{
-                  // Name of the file
-                  $filename = 'solobd.sql';
-                  // MySQL host
-                  $mysql_host = $host;
-                  // MySQL username
-                  $mysql_username = $usuario;
-                  // MySQL password
-                  $mysql_password = $password;
-                  // Database name
-                  $mysql_database = $bd;
-                  // Connect to MySQL server
-                  // Temporary variable, used to store current query
-                  $templine = '';
-                  // Read in entire file
-                  $lines = file($filename);
-                  // Loop through each line
-                  foreach ($lines as $line)
-                  {
-                  // Skip it if it's a comment
-                  if (substr($line, 0, 2) == '--' || $line == '')
-                      continue;
-                  // Add this line to the current segment
-                  $templine .= $line;
-                  // If it has a semicolon at the end, it's the end of the query
-                  if (substr(trim($line), -1, 1) == ';')
-                  {
-                      // Perform the query
-                      $connection->query($templine) or print('Error performing query \'<strong>' . $templine . '\': ' . mysql_error() . '<br /><br />');
-                      // Reset temp variable to empty
-                      $templine = '';
-                  }
-                  }
-                   echo "Tables imported successfully";
-                }
-                $file = fopen("db_var.php", "a");
+                include("./database.php");
+                $file = fopen("../db_var.php", "a");
                 fwrite($file, "<?php"."\n");
-                fwrite($file, "$"."usuario="."'".$usuario."';"."\n");
-                fwrite($file, "$"."password="."'".$password."';"."\n");
-                fwrite($file, "$"."bd="."'".$bd."';"."\n");
-                fwrite($file, "$"."host="."'".$host."';"."\n");
+                fwrite($file, "$"."database="."'".$db_name."';"."\n");
+                fwrite($file, "$"."user="."'".$db_user."';"."\n");
+                fwrite($file, "$"."password="."'".$db_password."';"."\n");
+                fwrite($file, "$"."host="."'".$db_host."';"."\n");
                 fwrite($file, "?>"."\n");
                 fclose($file);
-                unlink('instalador.php');
-                unlink('libreria.sql');
-                unlink('solobd.sql');
-                header('Location:index.php');
+                unlink("../instalador/database.php");
+                unlink("../instalador/instalador.php");
+                rmdir('../instalador');
+                 header("Location: ./../index.php");
+               }
               }
-          }
         ?>
     </div>
   </body>
 </html>
+
