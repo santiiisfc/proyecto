@@ -74,9 +74,9 @@
 //				fwrite($file, "}"."\n");  
 				fwrite($file, "?>"."\n");
 				fclose($file);
-                unlink("instalador.php");
+                unlink("install.php");
  				unlink("database.php");
-//				unlink("../instalador.php");
+//				unlink("../install.php");
                 header('Location:index.php');
               }
           }
