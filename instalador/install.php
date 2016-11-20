@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Instalación libreria </title>
+    <title>Instalación Libreria</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -10,9 +10,9 @@
   </head>
   <body style="background-color:blue; ">
 
-	<div style="width:1000px;margin: 0 auto;margin-top:47px;">
+	<div style="width:1000px;margin: 0 auto;margin-top:45px;">
 		<div>
-			<h1 style="margin-left:26px;margin-bottom:26px;color:white;text-decoration: underline;">Instalador Aplicación Web</h1>
+			<h1 style="margin-left:26px;margin-bottom:26px;color:red;">Instalador Aplicación Web</h1>
 		</div>
 			  
 		<div class='form-group col-lg-5'>
@@ -41,7 +41,7 @@
 		</div>
 		
 		<div class="form-group col-lg-5">
-			<input style="background-color:white;color:#0C5484; float:right;" type="submit" value="Instalar" class="btn btn-primary pull-left">
+			<input style="background-color:white;color:#0C5485; float:right;" type="submit" value="Instalar" class="btn btn-primary pull-left">
 		</div>
 	</form>	
 </div>
