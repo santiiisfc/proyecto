@@ -16,7 +16,7 @@
 		</div>
 			  
 		<div class='form-group col-lg-5'>
-			<form action="instalador.php" method="post">
+			<form action="install.php" method="post">
 				<div class="form-group">
 					<input type="text" name="fuser" class="form-control input-lg " placeholder="Usuario (acceso BD)" required>
 				</div>
