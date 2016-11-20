@@ -12,7 +12,7 @@
 
 	<div style="width:1000px;margin: 0 auto;margin-top:47px;">
 		<div>
-			<h1 style="margin-left:26px;margin-bottom:26px;color:white;text-decoration: underline;">Instalador Aplicación Web</h1>
+			<h1 style="margin-left:26px;margin-bottom:26px;color:whiteinstalammmmmmmmmmm;">Instalador Aplicación Web</h1>
 		</div>
 			  
 		<div class='form-group col-lg-5'>
