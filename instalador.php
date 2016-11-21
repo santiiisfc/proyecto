@@ -71,7 +71,7 @@
               }else{
                 if($contenido == 'completa'){
                   // Name of the file
-                  $filename = 'completa.sql';
+                  $filename = 'libreria.sql';
                   // MySQL host
                   $mysql_host = $host;
                   // MySQL username
@@ -147,7 +147,7 @@
                 fwrite($file, "?>"."\n");
                 fclose($file);
                 unlink('instalador.php');
-                unlink('completa.sql');
+                unlink('libreria.sql');
                 unlink('solobd.sql');
                 header('Location:index.php');
               }
