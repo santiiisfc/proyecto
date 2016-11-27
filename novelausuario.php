@@ -63,7 +63,7 @@ if ($result = $connection->query("SELECT l.codigol AS codigol, l.isbn AS ISBN, l
 								   echo "<td>".$obj->titulo."</td>";
 								   
 									echo "<td>".$obj->Autor."</td>";
-								   echo "<td><a href='addcarrito.php?id=".$obj->codigol."'>A&ntilde;adir</a></td>";
+								   echo "<td><a class='btn btn-info' href='addcarrito.php?id=".$obj->codigol."'>A&ntilde;adir</a></td>";
 								   echo "</tr>";
 							   }
 					  ?>
