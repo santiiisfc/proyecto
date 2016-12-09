@@ -41,7 +41,7 @@
 		
 		<div>
 			<ul id= "banner">
-				<a href="ofertasusuario.php"><img src="fotos/libros1.jpg"width="97%" height="200"/></a>
+				<img src="fotos/libros1.jpg"width="97%" height="200"/>
 			</ul>
 			<nav class="navbar">
 			  <div class="container-fluid">
