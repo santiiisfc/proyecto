@@ -1,5 +1,6 @@
  <?php
 include_once ("cabecerausu2.php");
+include_once("./db_configuration.php");
  
 session_start(); 
 	
