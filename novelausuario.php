@@ -1,11 +1,9 @@
  <?php
 include_once ("cabecerausu2.php");
-include_once("./db_configuration.php");
-if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-		
-    } 
+ 
+session_start(); 
+	
+    
 
 
 ?>
