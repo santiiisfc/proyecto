@@ -39,7 +39,7 @@ while($fila = $result->fetch_object()){
     $pdf->Cell(25, 8,$fila->iddetalle,1,0,"C");
   $pdf->Cell(25, 8,$fila->codigol,1,0,"C");
    $pdf->Cell(25, 8,$fila->cantidad,1,0,"C");
-    $pdf->Cell(25, 8,$fila->cantidad,1,0,"C");
+    $pdf->Cell(25, 8,$fila->precio,1,0,"C");
 	$pdf->Ln(8);
 }
 $pdf->Ln(5);
