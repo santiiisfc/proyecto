@@ -31,8 +31,7 @@ $pdf->SetFont('Arial', '', 8);
 $connection = new mysqli($db_host, $db_user, $db_password, $db_name);
 $consulta = "SELECT * FROM `pedidos` JOIN detallespedido on pedidos.idpedido=detallespedido.idpedido ";
 $result = $connection->query($consulta);
-$totalli = 0;
-$total = 0;
+
 while($fila = $result->fetch_object()){
 	$pdf->Cell(25, 8,$fila->idpedido, 1,0,"C");
 	$pdf->Cell(25, 8,$fila->fecha,1,0,"C");
